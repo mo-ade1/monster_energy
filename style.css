@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Audiowide', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    margin: 0 7rem;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container img{
+    width: 200px;
+}
+
+#home {
+    height: 100vh;
+    background:#0C0C0C ;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul a {
+    color: #fff;
+    padding: 20px;
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65%;
+}
+
+.Content-text {
+    width: 70%;
+}
+
+.Content img{
+    width: 400px;
+    animation: animation1 2s ease;
+}
+
+#home .Content .Content-text h1 span {
+    font-size: 60px;
+
+}
+#home .Content .Content-text h1 {
+    margin-bottom: 40px;
+    
+}
+
+#home .Content .Content-text p {
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color:chartreuse;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color:#000;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.Social {
+    margin-left: 1rem;
+    animation: animation1 2s ease-out;
+}
+
+.Social i {
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.monster-types {
+    display: block;
+    margin: auto;
+    height: 70px;
+    object-fit: contain;
+    animation: animation2 1.5s ease-out;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translate(500px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0px 10px #fff;
+}
+
+.Social i:hover {
+    text-shadow: 0 0 10px #fff;
+}
